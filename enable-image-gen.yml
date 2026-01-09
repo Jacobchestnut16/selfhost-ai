@@ -1,0 +1,17 @@
+services:
+    # Warnning GPU is required
+  comfyui:
+    image: ghcr.io/comfyanonymous/comfyui:latest
+    container_name: comfyui
+    ports:
+      - ${COMFYUI}:8188
+    volumes:
+      - ./comfyui/models:/app/models
+      - ./comfyui/output:/app/output
+      - ./comfyui/input:/app/input
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
