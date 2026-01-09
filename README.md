@@ -8,9 +8,9 @@ install docker if not already [docker](https://docs.docker.com/engine/install/) 
 
 Start docker if not already (docker desktop likes to open it in the background, if you want to see the window find and click on the docker logo in your taskbar (mac/linux top bar, windows arrow on the bottom bar near the wifi symbol))
 
-Download the three .yml files put them in a folder that you can find
+Download the project [here](https://github.com/Jacobchestnut16/selfhost-ai/archive/refs/heads/main.zip) and unzip it to a location you can find
 
-Open a terminal/command promt and navigate to the folder with the files by typing `cd <path to the folder, copy it from finder or file explorer if needed>` press enter
+Open a terminal/command promt and navigate to the folder with the files by typing `cd <path-to-project>` press enter; find the path-to-project by copying the location of the folder you just created, ensure it is the location where you will see a file called `docker-compose` with or without the extension .yml
 
 now choose your set up:
 
