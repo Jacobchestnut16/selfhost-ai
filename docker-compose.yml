@@ -5,7 +5,7 @@ services:
     ports:
       - ${OLLAMA}:11434
     volumes:
-      - ./ollama:/root/.ollama
+      - ollama:/root/.ollama
 
   open-webui:
     container_name: open-webui
@@ -17,4 +17,8 @@ services:
     environment:
       - OLLAMA_BASE_URL=http://ollama:${OLLAMA}
     volumes:
-      - ./open-webui:/app/backend/data
+      - openwebui:/app/backend/data
+
+volumes:
+  openwebui:
+  ollama:
